@@ -22,6 +22,12 @@ Run the migrations
 $ npm run migration:run
 ```
 
+Run the seeds
+
+```sh
+$ npm run seeds:run
+```
+
 Start your develop server
 
 ```sh
