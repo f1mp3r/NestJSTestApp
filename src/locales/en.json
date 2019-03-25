@@ -1,0 +1,21 @@
+{
+	"LOGIN": {
+		"WRONG-PIN": "Wrong Pin code!"
+	},
+	"CATEGORY": {
+		"PRODUCT": {
+			"one": "product category",
+			"other": "product categories"
+		},
+		"MENU": {
+			"one": "menu category",
+			"other": "menu categories"
+		}
+	},
+	"ENTITY": {
+		"THERE-IS-NO {{entityName}}": {
+			"one": "There is no such a {{entityName}}!",
+			"other": "There are no such {{entityName}}!"
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"LOGIN": {
+		"WRONG_PIN": "Грешен пин код!"
+	},
+	"PROPERTIES": {
+		"NAME": {
+			"one": "име",
+			"other": "имена"
+		},
+		"SHORT_NAME": {
+			"one": "съкращение",
+			"other": "съкращения"
+		},
+		"PIN_CODE": {
+			"one": "пин код",
+			"other": "пин кодове"
+		}
+	},
+	"CANNOT_DELETE_REASONS": {
+		"IN_USE": "все още се използва"
+	},
+	"ENTITIES": {
+		"ROLE": {
+			"one": "роля",
+			"other": "роли"
+		},
+		"THE_ROLE": {
+			"one": "ролята",
+			"other": "ролите"
+		},
+		"USER": {
+			"one": "оператор",
+			"other": "оператори"
+		},
+		"THE_USER": {
+			"one": "потребителят",
+			"other": "потребителите"
+		}
+	},
+	"ENTITY_FAILS": {
+		"NOT_FOUND {{entityName}}": {
+			"m": {
+				"one": "Не беше открит такъв {{entityName}}!"
+			},
+			"f": {
+				"one": "Не беше откритa такaва {{entityName}}!"
+			},
+			"middle": "Не беше открито такова {{entityName}}!",
+			"other": "Не бяха открити такива {{entityName}}!"
+		},
+		"ALREADY_EXIST {{type, property, value}}": {
+			"one": "{{type}} с {{property}} '{{value}}' вече съществува!",
+			"other": "{{type}} с {{property}} '{{value}}' вече съществуват!"
+		},
+		"CANNOT_DELETE {{subject, value, reason}}": {
+			"m": {
+				"one": "Не може да бъде изтрит {{subject}} '{{value}}' докато той {{reason}}!"
+			},
+			"f": {
+				"one": "Не може да бъде изтрита {{subject}} '{{value}}' докатя тя {{reason}}!"
+			},
+			"other": "Не могат да бъдат изтрити {{subject}} '{{value}}' докато те {{reason}}"
+		}
+	},
+	"UNEXPEXTED {{number}}": "Грешка в системата! Моля, свържете се със техническия отдел! Номер на грешката {{number}}",
+	"ENTITY": {
+		"ALREADY_EXIST {{type, property, value}}": {
+			"one": "ENTITY.ALREADY_EXIST {{type, property, value}}",
+			"other": "ENTITY.ALREADY_EXIST {{type, property, value}}"
+		}
+	}
+}

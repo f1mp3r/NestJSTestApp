@@ -1,0 +1,24 @@
+{
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "json"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+  },
+  "testRegex": "/src/modules/intake-stock-receipt/service/.*\\.(test|spec).(ts|tsx|js)$",
+  "testRegexAll": "/src/.*\\.(test|spec).(ts|tsx|js)$",
+  "testSingleFile": "/src/modules/product-variation/service/.*\\.(test|spec).(ts|tsx|js)$",
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,tsx,ts}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageReporters": [
+    "json",
+    "lcov"
+  ],
+  "testURL": "http://localhost"
+}

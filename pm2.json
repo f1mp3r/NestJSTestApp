@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "hype-back-end",
+            "script": "npm",
+            "args" : "run start:env"
+        }
+    ]
+ }
