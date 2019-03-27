@@ -17,5 +17,8 @@
 			"one": "There is no such a {{entityName}}!",
 			"other": "There are no such {{entityName}}!"
 		}
+	},
+	"CASHTERMINAL_ERRORS": {
+		"MISSING_BALANCE_ENTRY": "Balance field missing"
 	}
 }

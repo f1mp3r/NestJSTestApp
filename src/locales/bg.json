@@ -68,5 +68,8 @@
 			"one": "ENTITY.ALREADY_EXIST {{type, property, value}}",
 			"other": "ENTITY.ALREADY_EXIST {{type, property, value}}"
 		}
+	},
+	"CASHTERMINAL_ERRORS": {
+		"MISSING_BALANCE_ENTRY": "Липсва баланс поле"
 	}
 }
