@@ -9,6 +9,8 @@ import { GuardService } from './services/guard.service';
 import * as i18n from 'i18n';
 import * as moment from 'moment';
 import { getManager } from 'typeorm';
+import { CashTerminalRepository } from './repositories/cashterminal.repository';
+import { CashTerminalLogRepository } from './repositories/cashterminal_log.repository';
 import { RoleRepository } from './repositories/role.repository';
 import { UserRepository } from './repositories/user.repository';
 
@@ -31,6 +33,8 @@ const providers = [
 const typeOrmModule = TypeOrmModule.forFeature([
   UserRepository,
   RoleRepository,
+  CashTerminalRepository,
+  CashTerminalLogRepository,
 ]);
 
 @Module({

@@ -70,6 +70,7 @@
 		}
 	},
 	"CASHTERMINAL_ERRORS": {
-		"MISSING_BALANCE_ENTRY": "Липсва баланс поле"
+		"MISSING_BALANCE_ENTRY": "Липсва баланс поле",
+		"INSUFFICIENT_FUNDS": "Нямате достатъчно баланс (наличност: {{ balance }})"
 	}
 }

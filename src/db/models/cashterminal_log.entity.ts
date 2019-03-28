@@ -1,4 +1,4 @@
-import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 import { User } from './user.entity';
 
 @Entity({ name: 'cashterminal_logs' })
@@ -12,6 +12,9 @@ export class CashTerminalLog {
   @Column('decimal', { precision: 10, scale: 4, name: 'old_balance' })
   public oldBalance: number;
 
+  @Column('decimal', { precision: 10, scale: 4, name: 'new_balance' })
+  public newBalance: number;
+
   @JoinColumn({ name: 'user_id' })
   @ManyToOne(type => User)
   public user: User;
@@ -23,6 +26,6 @@ export class CashTerminalLog {
   })
   public userId: number;
 
-  @CreateDateColumn({ name: 'created_at' })
+  @CreateDateColumn({ name: 'created_at', type: 'datetime' })
   public createdAt: Date;
 }

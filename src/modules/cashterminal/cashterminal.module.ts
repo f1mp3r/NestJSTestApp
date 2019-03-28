@@ -13,7 +13,7 @@ import { CashTerminalService } from './services/cashterminal.service';
     ],
     controllers: [
         TerminalController,
-        // LogsController,
+        LogsController,
     ],
     providers: [
         CashTerminalService,

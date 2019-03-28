@@ -5,11 +5,17 @@ import { BaseErrorService } from '../../../modules/common/services/base-error.se
 export class CashTerminalServiceErr extends BaseErrorService {
   private readonly errors = {
     MISSING_BALANCE_ENTRY: {
-        bg: () => (
-          this.i18n.__n('CASHTERMINAL_ERRORS.MISSING_BALANCE_ENTRY')
-        ),
-        en: () => true
+      bg: () => {
+        return this.i18n.__n('CASHTERMINAL_ERRORS.MISSING_BALANCE_ENTRY');
       },
+      en: () => true
+    },
+    INSUFFICIENT_FUNDS: {
+      bg: (balance) => {
+        return this.i18n.__n('CASHTERMINAL_ERRORS.INSUFFICIENT_FUNDS', 1, { balance });
+      },
+      en: () => true
+    }
   };
 
   constructor(
@@ -22,6 +28,12 @@ export class CashTerminalServiceErr extends BaseErrorService {
   public NF_CASHTERMINAL_BALANCE_ENTRY(): never {
     throw new Error(
       this.errors.MISSING_BALANCE_ENTRY[this.lang]()
+    );
+  }
+
+  public CNT_WITHDRAW_INSUFFICIENT_FUNDS(balance: number): void {
+    throw new Error(
+      this.errors.INSUFFICIENT_FUNDS[this.lang](balance)
     );
   }
 }
